@@ -4,6 +4,8 @@ const bodyParser = require("body-parser");
 const app = express();
 app.use(bodyParser.urlencoded({extended:true})); //post nested objects / form data
 
+app.use(express.static('public'));// Serve static files from the 'public' directory
+
 app.get("/", function(req, res){
     // res.send("Hello World.");
     res.sendFile(__dirname + "/index.html");
