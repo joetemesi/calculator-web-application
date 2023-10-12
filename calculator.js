@@ -30,6 +30,9 @@ app.post("/", function(req, res){
     } else if (operator == '/'){
         var result = num1/num2;
         res.send("The result of the operation is: " +result);
+    } else if (operator == '%') { //modulus
+        var result = num1%num2;
+        res.send("The result of the operation is: " +result);
     } else {
         res.send(operator + " is an invalid operator. Kindly use either +(Addition), -(Subtraction), *(Multiplication) or /(Division)");
         return;
