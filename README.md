@@ -8,6 +8,7 @@ This is a simple Express.js web application that performs basic arithmetic calcu
 - Subtraction
 - Multiplication
 - Division
+- Modulus
 
 ## Getting Started
 
@@ -37,7 +38,7 @@ The application will be accessible at http://localhost:3000 in your web browser.
 
 ## Usage
 
-1. Enter two numbers and select an operator (+, -, *, /).
+1. Enter two numbers and select an operator (+, -, *, /, %).
 2. Click the "Calculate" button to perform the calculation.
 3. The result will be displayed on the page.
 
