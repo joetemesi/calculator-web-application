@@ -5,6 +5,7 @@ const app = express();
 app.use(bodyParser.urlencoded({extended:true})); //post nested objects / form data
 
 app.use(express.static('public'));// Serve static files from the 'public' directory
+app.set("view engine", "ejs");
 
 app.get("/", function(req, res){
     // res.send("Hello World.");
