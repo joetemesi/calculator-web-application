@@ -37,8 +37,8 @@ app.post("/", function(req, res){
         res.send(operator + " is an invalid operator. Kindly use either +(Addition), -(Subtraction), *(Multiplication), /(Division) or %(Modulus) ");
         return;
     }
-
-    hh
+ //trying to change things using temesi knowledge
+    
 })
 
 app.listen(3000, function(){
