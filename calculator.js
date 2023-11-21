@@ -21,19 +21,49 @@ app.post("/", function(req, res){
     // console.log(operator);
     if(operator == '+'){
         var result = num1+num2;
-        res.send("The result of the operation is: " +result);
+        res.render("result", {
+            number1: num1,
+            number2:num2,
+            operation: operator,
+            answer:result
+        })
+        // res.send("The result of the operation is: " +result);
     } else if (operator == '-'){
         var result = num1-num2;
-        res.send("The result of the operation is: " +result);
+        res.render("result", {
+            number1: num1,
+            number2:num2,
+            operation: operator,
+            answer:result
+        })
+    
     } else if (operator == '*'){
         var result = num1*num2;
-        res.send("The result of the operation is: " +result);    
+        res.render("result", {
+            number1: num1,
+            number2:num2,
+            operation: operator,
+            answer:result
+        })   
+
     } else if (operator == '/'){
         var result = num1/num2;
-        res.send("The result of the operation is: " +result);
+        res.render("result", {
+            number1: num1,
+            number2:num2,
+            operation: operator,
+            answer:result
+        })
+        
     } else if (operator == '%') { //modulus
         var result = num1%num2;
-        res.send("The result of the operation is: " +result);
+        res.render("result", {
+            number1: num1,
+            number2:num2,
+            operation: operator,
+            answer:result
+        })
+        
     } else {
         res.send(operator + " is an invalid operator. Kindly use either +(Addition), -(Subtraction), *(Multiplication), /(Division) or %(Modulus) ");
         return;
