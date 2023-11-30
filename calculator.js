@@ -34,8 +34,14 @@ app.post("/", function(req, res){
         var result = num1*num2;
 
     } else if (operator == '/'){
-        var result = num1/num2;
-
+        if (num2 !== 0){
+            var result = num1/num2;
+        } else {
+            num1 = "the";
+            operator = " "
+            num2 ="operation ";
+            result = " an error as division by zero is not allowed"
+        }
     } else if (operator == '%') { //modulus
         var result = num1%num2;
 
